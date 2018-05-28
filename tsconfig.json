@@ -19,6 +19,15 @@
     "paths": {
       "ngx-example-library": [
         "dist/ngx-example-library"
+      ],
+      "lib3": [
+        "dist/lib3"
+      ],
+      "lib1": [
+        "dist/lib1"
+      ],
+      "lib2": [
+        "dist/lib2"
       ]
     }
   },
