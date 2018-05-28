@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.example.ex3" version="6.0.6">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.example.ex3" version="6.0.9">
   <name>Operations</name>
   <description>example Operations</description>
   <author email="dev@example.com" href="http://example.com/">example</author>
