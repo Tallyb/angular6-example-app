@@ -28,6 +28,9 @@
       ],
       "lib2": [
         "dist/lib2"
+      ],
+      "lib4": [
+        "dist/lib4"
       ]
     }
   },
