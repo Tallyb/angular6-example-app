@@ -37,7 +37,7 @@ jobs:
 
     - stage: build
       script: 
-        - echo "I am building"
+        - echo "this is ${TRAVIS_TAG}"
 
 # branches:
 #   only:
