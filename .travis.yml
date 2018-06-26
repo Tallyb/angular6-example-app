@@ -23,7 +23,7 @@ stages:
   - name: test
 
   - name: build
-    if: tag ~= ^6
+    if: tag IS present
 
 jobs: 
   include: 
