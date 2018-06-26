@@ -19,12 +19,22 @@ node_js:
 install: 
   - npm install
 
-stages: 
+stages:
+  - name: test
+
   - name: build
     if: tag = true
 
 jobs: 
   include: 
+    - stage: test
+      script: 
+        - npm run lint
+        - npm run lint:library
+        - npm run test
+        - npm run test:library
+
+
     - stage: build
       script: 
         - echo "I am building"
