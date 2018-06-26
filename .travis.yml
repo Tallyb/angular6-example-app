@@ -14,16 +14,17 @@ addons:
 language: node_js
 
 node_js:
-  - 8.9
+  - 8
 
 stages: 
-  - build
+  - name: build
     if: tag = true
 
 jobs: 
   include: 
     - stage: build
-      script: echo "I am building"
+      script: 
+        - echo "I am building"
 
 # branches:
 #   only:
