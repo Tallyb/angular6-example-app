@@ -1,0 +1,12 @@
+<div>
+    <app-nav></app-nav>
+    <router-outlet *ngIf="isOnline;else isOffline"></router-outlet>
+    <ng-template #isOffline>
+        <div>
+            <p class="offline-error">{{'offlineMessage' | translate}}&nbsp;&nbsp;&nbsp;<span>:&nbsp;)</span></p>
+        </div>
+    </ng-template>
+</div>
+<lib-lib1></lib-lib1>
+<lib-test1></lib-test1>
+<app-footer></app-footer>

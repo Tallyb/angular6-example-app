@@ -4,7 +4,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -17,24 +17,21 @@
       "dom"
     ],
     "paths": {
-      "ngx-example-library": [
-        "dist/ngx-example-library"
+      "@lib/*": [
+        "dist/@lib/*"
       ],
-      "lib3": [
-        "dist/lib3"
+      "test1": [
+        "dist/test1"
       ],
-      "lib1": [
-        "dist/lib1"
-      ],
-      "lib2": [
-        "dist/lib2"
-      ],
-      "lib4": [
-        "dist/lib4"
+      "test1/*": [
+        "dist/test1/*"
       ]
     }
   },
   "angularCompilerOptions": {
-    "preserveWhitespaces": false
+    "preserveWhitespaces": false,
+    "strictMetadataEmit": false,
+    "disableTypeScriptVersionCheck": true,
+    "enableResourceInlining": false
   }
 }
